@@ -1,7 +1,7 @@
-FROM python:3-alpine
+FROM python:3.7-slim-buster
 
 ADD . /bot
-RUN apk add py3-telegram-bot
+RUN pip install python-telegram-bot
 WORKDIR "/bot"
 VOLUME /bot/db
 CMD [ "python", "app.py" ]
