@@ -10,7 +10,7 @@ db = database.DB()
 db.loadDB()
 
 from telegram.ext import (Updater, CommandHandler)
-from telegram.ext import ParseMode
+from telegram import ParseMode
 
 # Enable logging
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
